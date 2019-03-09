@@ -23,6 +23,12 @@ ul {
     padding: 0 15px;
 }
 
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 header .login {
     font-size: 13px;
     line-height: 20px;
@@ -33,6 +39,11 @@ header .menu a {
     font-size: 13px;
     line-height: 28px;
     color: #333333;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 header .phone {
@@ -85,11 +96,34 @@ header .icon-phone {
     font-size: 20px;
 }
 
+.banner .sale {
+    width: 305px;
+    height: 360px;
+    background-color: #ff6934;
+}
+
+.banner .slider {
+    width: 640px;
+    height: 360px;
+    background-color: #ffffff;
+}
+
+.advantages {
+    width: calc(100% - 320px);
+    float: left;
+}
+
+.advantages .item {
+    width: 25%;
+    float: left;
+}
+
 .advantages .item span {
     font-size: 14px;
     font-weight: bold;
     line-height: 17px;
     color: #333333;
+    display: block;
 }
 
 .advantages .item p {
@@ -100,6 +134,9 @@ header .icon-phone {
 
 .subscribe {
     background-color: #64ba4a;
+    width: 320px;
+    float: left;
+    padding: 20px;
 }
 
 .subscribe label {
@@ -113,6 +150,7 @@ header .icon-phone {
     color: #999999;
     border: none;
     padding-left: 10px;
+    width: 100%;
 }
 
 .subscribe button {
@@ -130,10 +168,16 @@ header .icon-phone {
     color: rgba(255,255,255,0.5);
 }
 
+.advSub + .catalog {
+    margin-top: 30px;
+}
+
 .filter li {
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px dashed #666666;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .filter a {
@@ -141,10 +185,14 @@ header .icon-phone {
     color: #666666;
 }
 
+.filter + .cards {
+    margin-top: 30px;
+}
+
 .card .img {
     width: 220px;
     height: 220px;
-    background-color: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -213,6 +261,12 @@ header .icon-phone {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.tabs li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
 .tabs li a {
     font-size: 14px;
     text-decoration: none;
@@ -237,6 +291,27 @@ footer {
     background-color: #64ba4a;
 }
 
+.footMenu {
+    width: 50%;
+    float: left;
+}
+
+.footMenu > li {
+    width: 50%;
+    float: left;
+
+}
+
+.footContacts {
+    width: 25%;
+    float: left;
+}
+
+.copyrights {
+    width: 25%;
+    float: left;
+}
+
 footer a {
     text-decoration: none;
     color: #ffffff;
@@ -246,10 +321,185 @@ footer .socLinks a {
     font-size: 21px;
 }
 
-.bredcrumbs a {
+.content .bredcrumbs a {
     font-size: 12px;
-    
+    line-height: 22px;
+    color: #999999;
+    text-decoration: none;
 }
+
+.content .bredcrumbs span {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.checkout h1 {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.checkout .choiceTown  span {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+
+header .menu  .corp {
+    color: #ff7200;
+}
+
+.content .caption {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.content .caption a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.corpClients .form>span {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpClients form {
+    background-color: #f9f9f9;
+}
+
+.corpClients form label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: italic;
+    color: #666666;
+}
+
+.corpClients .logo>label {
+    font-size: 13px;
+    line-height: normal;
+    font-style: normal;
+    color: #333333;
+}
+
+.corpClients .logo span {
+    font-size: 11px;
+    color: #999999;
+}
+
+.corpClients .logo li label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: normal;
+    color: #666666;
+}
+
+.corpClients .input a {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: normal;
+    color: #229647;
+}
+
+.corpClients .input span {
+    font-size: 13px;
+    color: #999999;
+}
+
+.corpClients .figure option {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpClients .date input {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpClients .info textarea {
+    width: 280px;
+    height: 125px;
+}
+
+.corpClients form button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #ff7200;
+    border: none;
+}
+
+.product span {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.product p {
+    font-size: 13px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.product a {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #64ba4a;
+    text-decoration: none;
+}
+
+.content .bredcrumbs li,
+.content .bredcrumbs li a {
+    font-size: 12px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #999999;
+}
+
+.content .news h1 {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.content .news h2 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.content .news span {
+    font-size: 12px;
+    line-height: 22px;
+    color: #aaaaaa;
+}
+
+.content .news p {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.content .moreNews {
+    font-size: 13px;
+    line-height: 22px;
+    color: #0069b4;
+}
+
+
+
+
+
 
 
 
