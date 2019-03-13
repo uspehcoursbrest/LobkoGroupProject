@@ -28,6 +28,25 @@ ul {
     clear: both;
 }
 
+.headWrap {
+    display: table;
+    width: 100%;
+}
+
+.headWrap > div {
+    display: table-cell;
+    width: 33.3333%;
+    vertical-align: top;
+}
+
+.headWrap .logo {
+    text-align: center;
+}
+
+.headWrap .right {
+    text-align: right;
+}
+
 header .login {
     font-size: 13px;
     line-height: 20px;
@@ -57,6 +76,8 @@ header .callback {
     text-decoration: none;
     color: #0069b4;
     border-bottom: 1px dashed #0069b4;
+    display: table;
+    margin-left: auto;
 }
 
 header p.timing {
@@ -114,6 +135,11 @@ header .icon-phone {
     float: left;
 }
 
+.subscribe .wrap {
+    display: table;
+    width: 100%;
+}
+
 .subscribe {
     background-color: #63b849;
     width: 320px;
@@ -143,11 +169,16 @@ header .icon-phone {
     width: 185px;
     background-color: #259c47;
     border: none;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .subscribe .wrap span {
     font-size: 12px;
     color: rgba(255,255,255,0.5);
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 25px;
 }
 
 .filter li{
@@ -206,6 +237,33 @@ header .icon-phone {
     vertical-align: top;
 }
 
+.card {
+    position: relative;
+}
+
+.status {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: -3px;
+    width: 43px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.status.hit {
+    background-color: #6eddcc;
+}
+
+.status.discount {
+    background-color: #ffed03;
+}
+
+.status.new {
+    background-color: #78ec71;
+}
+
 .card button {
     font-size: 14px;
     line-height: 32px;
@@ -215,6 +273,12 @@ header .icon-phone {
     background-color: #ff7200;
     border: none
 }
+
+.widgets .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .widgets h1 {
     font-size: 18px;
@@ -293,6 +357,11 @@ footer .socLinks a {
 .copyright {
     width: 25%;
     float: left;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
 }
 
 .banner .sale {
@@ -431,4 +500,114 @@ footer .socLinks a {
     width: 185px;
     background-color: #ea5b0c;
     border: none;
+}
+
+header .menu  .corp {
+    color: #ff7200;
+}
+
+.content .caption {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.content .caption a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.corpClients .form>span {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpClients form {
+    background-color: #f9f9f9;
+}
+
+.corpClients form label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: italic;
+    color: #666666;
+}
+
+.corpClients .logo>label {
+    font-size: 13px;
+    line-height: normal;
+    font-style: normal;
+    color: #333333;
+}
+
+.corpClients .logo span {
+    font-size: 11px;
+    color: #999999;
+}
+
+.corpClients .logo li label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: normal;
+    color: #666666;
+}
+
+.corpClients .input label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: normal;
+    text-decoration: underline;
+    color: #229647;
+}
+
+.corpClients .input span {
+    font-size: 13px;
+    color: #999999;
+}
+
+.corpClients .figure option {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpClients .date input {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpClients .info textarea {
+    width: 280px;
+    height: 125px;
+}
+
+.corpClients form button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #ff7200;
+    border: none;
+}
+
+.product span {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.product p {
+    font-size: 13px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.product a {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #64ba4a;
+    text-decoration: none;
 }
