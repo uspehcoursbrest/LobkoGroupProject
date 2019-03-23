@@ -49,6 +49,20 @@ ul {
     white-space: nowrap;
 }
 
+a,
+button {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.7;
+}
+
 .headWrap {
     display: table;
     width: 100%;
