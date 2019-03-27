@@ -170,6 +170,10 @@ header .icon-phone {
 .banner .sale {
     width: 305px;
     height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .banner .slider {
@@ -220,6 +224,10 @@ header .icon-phone {
     float: left;
     padding: 20px;
     margin-top: 30px;
+}
+
+.subscribe .wrap {
+    width: 285px;
 }
 
 .subscribe label {
@@ -282,6 +290,10 @@ header .icon-phone {
 
 .filter + .cards {
     margin-top: 55px;
+}
+
+.filterSelect {
+    display: none;
 }
 
 .cards {
@@ -490,6 +502,7 @@ footer {
     color: #ffffff;
     background-color: #64ba4a;
     padding: 20px 0;
+    position: relative;
 }
 
 footer .copyright span {
@@ -526,6 +539,10 @@ footer .soclincs a {
     float: left;
     padding-left: 70px;
     text-align: right;
+}
+
+.soclincs div {
+    display: inline-block;
 }
 
 /*CorpClients*/
