@@ -1237,3 +1237,9 @@ header.mobile {
     padding: 0 5px;
     text-align: center;
 }
+
+.up {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
