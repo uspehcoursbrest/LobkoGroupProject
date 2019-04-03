@@ -179,7 +179,36 @@ header .icon-phone {
 .banner .slider {
     width: 640px;
     height: 360px;
+    position: relative;
 }
+
+.dots {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.dots button {
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    opacity: 1;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.dots button + button {
+    margin-left: 12px;
+}
+
+,dots button.active {
+    opacity: 1;
+ }
 
 .content .sale {
     width: 304px;
@@ -423,6 +452,50 @@ header .icon-phone {
     width: 100px;
     background-color: #ff7200;
     border: none;
+}
+
+.info.ui-tabs {
+    padding: 0;
+}
+
+.info.ui-tabs .ui-tabs-nav {
+    padding: 0;
+}
+
+.info.ui-tabs .ui-tabs-nav li {
+    margin: 0;
+}
+
+.info.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 0;
+    padding: 0;
+}
+
+.info.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0 15px;
+}
+
+.info.ui-tabs .ui-tabs-panel {
+    padding: 0;
+}
+
+.info .tabs a {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+    padding: 0 15px;
+    outline: none;
+    height: 45px;
+    line-height: 45px;
+}
+
+.info .tabs li.ui-tabs-active a,
+.info .tabs li a:hover {
+    border: none;
+    background-color: #f2fff7;
+    color: #1c9847;
+    cursor: pointer;
 }
 
 .widgets .wrapper {
@@ -1242,4 +1315,63 @@ header.mobile {
     position: fixed;
     left: 10px;
     bottom: 10px;
+}
+
+.selectBl {
+    width: 290px;
+}
+
+.selectBl .selectric {
+    width: 100%;
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+}
+
+.selectBl .selectric .label {
+    font-size: 13px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.selectBl .selectric .button {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #00a48c;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    margin-top: -2px;
+    background-color: transparent;
+}
+
+.selectBl .selectric .button::after {
+    display: none;
+}
+
+.selectBl .selectric-items {
+    border: 1px solid #d6d6d6;
+}
+
+.selectBl .selectric-items li {
+    padding: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    line-height: 26px;
+    color: #333333;
+    background-color: #fff;
+}
+
+.selectBl .selectric-items li:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.slides .item {
+    height: 360px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
