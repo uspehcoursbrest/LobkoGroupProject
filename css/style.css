@@ -206,7 +206,7 @@ header .icon-phone {
     margin-left: 12px;
 }
 
-,dots button.active {
+.dots button.active {
     opacity: 1;
  }
 
@@ -452,6 +452,13 @@ header .icon-phone {
     width: 100px;
     background-color: #ff7200;
     border: none;
+}
+
+
+.card button:hover {
+    color: #ff7200;
+    background-color: #ffffff;
+    border: 1px solid #ff7200;
 }
 
 .info.ui-tabs {
